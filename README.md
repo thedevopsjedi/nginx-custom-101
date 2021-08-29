@@ -55,12 +55,12 @@ Let me explain this in a little more detail:
 
 | Option | Description |
 |:--:|:--|
-| `-it` | Instructs Docker to allocate a pseudo-TTY connected to the container’s stdin; creating an interactive bash shell in the container. |
-| `--rm` | Automatically removes the container when it exits, or is stopped. |
-| `-d` | Runs the container in the background and prints the container ID. If this isn't specified the output from the container is written to the console and `Ctrl+C` is required to exit the container. |
-| `-p` | Publishes a containers port(s) to the host. This controls the mapping between the container and the host running it. |
-| `--name` | If you don't specify a name, the docker daemon generates a random string name. |
-| `-v` | Mounts a local folder as a volume inside the container. Using `${pwd}` allows the path to be relative to where the command is being run from. |
+| ` -it ` | Instructs Docker to allocate a pseudo-TTY connected to the container’s stdin; creating an interactive bash shell in the container. |
+| ` --rm ` | Automatically removes the container when it exits, or is stopped. |
+| ` -d ` | Runs the container in the background and prints the container ID. If this isn't specified the output from the container is written to the console and `Ctrl+C` is required to exit the container. |
+| ` -p ` | Publishes a containers port(s) to the host. This controls the mapping between the container and the host running it. |
+| ` --name ` | If you don't specify a name, the docker daemon generates a random string name. |
+| ` -v ` | Mounts a local folder as a volume inside the container. Using `${pwd}` allows the path to be relative to where the command is being run from. |
 
 The image is specified using a tag that is applied to the image stored in the docker registry.  In the example above this is in the format of `nginx:latest` where `nginx` represents the repository, and `latest` represents the version of the image to run.  
 
